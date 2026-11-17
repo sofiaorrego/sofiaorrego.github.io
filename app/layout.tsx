@@ -3,15 +3,11 @@ import localFont from "next/font/local";
 import type { ReactNode } from "react";
 import "./globals.css";
 
-const lato = localFont({
-  src: [
-    { path: "./fonts/lato-regular.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/lato-italic.woff2", weight: "400", style: "italic" },
-    { path: "./fonts/lato-bold.woff2", weight: "700", style: "normal" },
-  ],
-  variable: "--font-lato",
+const ibmPlexSans = localFont({
+  src: "./fonts/ibm-plex-sans.woff2",
+  weight: "300 400",
+  variable: "--font-ibm-plex-sans",
   display: "swap",
-  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -21,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="es" className={lato.variable}>
+    <html lang="es" className={ibmPlexSans.variable}>
       <body>{children}</body>
     </html>
   );

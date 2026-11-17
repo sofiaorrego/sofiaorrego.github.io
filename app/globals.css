@@ -12,13 +12,14 @@
   --color-accent: var(--color-emerald-300);
   --color-accent-hover: var(--color-emerald-400);
   --color-on-accent: var(--color-gray-800);
-  --font-display: var(--font-lato);
-  --font-sans: var(--font-lato);
+  --font-display: var(--font-ibm-plex-sans);
+  --font-sans: var(--font-ibm-plex-sans);
 }
 
 body {
   background: var(--color-paper);
   color: var(--color-ink);
+  font-weight: 300;
 }
 
 :focus-visible {
@@ -52,13 +53,12 @@ body {
 
 .masthead-bar {
   border-bottom: 1px solid var(--color-rule);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .masthead h1 {
   padding-block: clamp(1.15rem, 2.65vw, 3.4rem) clamp(1.5rem, 3.3vw, 3.8rem);
   font-size: clamp(2.9rem, 11.85vw, 9.5rem);
-  font-weight: 700;
   line-height: 0.91;
   letter-spacing: -0.04em;
   overflow-wrap: anywhere;
@@ -75,7 +75,7 @@ body {
   border-inline: 1px solid var(--color-rule);
   background: var(--color-accent);
   color: var(--color-on-accent);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .section-link:hover,
@@ -123,7 +123,6 @@ body {
 
 .work-heading h2 {
   font-size: clamp(1.65rem, 3.25vw, 2.75rem);
-  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.035em;
 }
@@ -131,6 +130,7 @@ body {
 .work-heading span {
   color: var(--color-muted);
   font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .project-collage {
@@ -183,7 +183,6 @@ body {
   align-self: center;
   padding: 0.63rem 0.7rem 0.72rem;
   font-size: clamp(1rem, 1.6vw, 1.4rem);
-  font-weight: 700;
   line-height: 1.12;
   overflow-wrap: anywhere;
 }
@@ -242,7 +241,7 @@ body {
   padding-left: clamp(1rem, 3.25vw, 2.25rem);
   border-bottom: 1px solid var(--color-rule);
   background: var(--color-paper);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .project-close {
@@ -289,7 +288,6 @@ body {
   max-width: 18ch;
   margin-bottom: 1.1rem;
   font-size: clamp(2rem, 5.5vw, 4.9rem);
-  font-weight: 700;
   line-height: 0.98;
   letter-spacing: -0.04em;
   overflow-wrap: anywhere;
@@ -326,7 +324,6 @@ body {
 .construction-notice h3 {
   max-width: 12ch;
   font-size: clamp(1.85rem, 5vw, 4.5rem);
-  font-weight: 700;
   line-height: 1;
   letter-spacing: -0.035em;
 }

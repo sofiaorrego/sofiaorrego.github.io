@@ -12,35 +12,45 @@ colors:
   concrete: "#d5d4c7"
 typography:
   display:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "clamp(2.9rem, 11.85vw, 9.5rem)"
-    fontWeight: 700
+    fontWeight: 300
     lineHeight: 0.91
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "clamp(1.65rem, 3.25vw, 2.75rem)"
-    fontWeight: 700
+    fontWeight: 300
     lineHeight: 1.05
     letterSpacing: "-0.035em"
   sheet-title:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "clamp(2rem, 5.5vw, 4.9rem)"
-    fontWeight: 700
+    fontWeight: 300
     lineHeight: 0.98
     letterSpacing: "-0.04em"
   tile-title:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "clamp(1rem, 1.6vw, 1.4rem)"
-    fontWeight: 700
+    fontWeight: 300
     lineHeight: 1.12
+  construction-title:
+    fontFamily: IBM Plex Sans
+    fontSize: "clamp(1.85rem, 5vw, 4.5rem)"
+    fontWeight: 300
+    lineHeight: 1
+    letterSpacing: "-0.035em"
   body:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "1.125rem"
-    fontWeight: 400
+    fontWeight: 300
     lineHeight: 1.55
+  control:
+    fontFamily: IBM Plex Sans
+    fontSize: "1rem"
+    fontWeight: 400
   label:
-    fontFamily: Lato
+    fontFamily: IBM Plex Sans
     fontSize: "0.875rem"
     fontWeight: 400
 rounded:
@@ -53,10 +63,12 @@ components:
   section-link:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.on-accent}"
+    typography: "{typography.control}"
     rounded: "{rounded.square}"
   project-link:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.on-accent}"
+    typography: "{typography.control}"
     rounded: "{rounded.square}"
   project-close:
     backgroundColor: "{colors.accent}"
@@ -81,6 +93,7 @@ components:
   construction-notice:
     backgroundColor: "{colors.concrete}"
     textColor: "{colors.ink}"
+    typography: "{typography.construction-title}"
     rounded: "{rounded.square}"
 ---
 
@@ -90,14 +103,14 @@ components:
 
 **Creative North Star: "Lámina de arquitectura"**
 
-El portafolio toma su ritmo de una lámina de arquitectura. El nombre en Lato, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El naranja claro enmarca las imágenes y el verde esmeralda señala dónde actuar.
+El portafolio toma su ritmo de una lámina de arquitectura. El nombre en IBM Plex Sans, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El naranja claro enmarca las imágenes y el verde esmeralda señala dónde actuar.
 
 La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.
 
 **Key Characteristics:**
 
 - Recortes de distinta escala con bordes cuadrados.
-- Jerarquía en Lato y líneas finas de tinta.
+- Tipografía ligera y líneas finas de tinta.
 - Controles verde esmeralda con texto e iconos gris oscuro.
 
 ## Colors
@@ -118,7 +131,7 @@ La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un
 
 ## Typography
 
-Lato se aloja en el proyecto. El nombre, los encabezados y los títulos usan el peso 700. La descripción y la nota de muestra usan el peso 400. Las cabeceras compactas y los enlaces de acción mantienen el peso 700.
+El proyecto aloja IBM Plex Sans en un archivo variable. El nombre, los títulos y las descripciones usan Light 300. Las cabeceras compactas, las etiquetas y los enlaces de acción usan Regular 400.
 
 - **Nombre.** Escala fluida y caja ajustada con interlineado de 0.91.
 - **Encabezado de sección.** Escala fluida contenida e interlineado de 1.05.
