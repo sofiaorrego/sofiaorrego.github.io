@@ -3,7 +3,8 @@ import ProjectCollage from "@/components/ProjectCollage";
 import { projects } from "@/content/projects";
 
 export default function PortfolioPage() {
-  const allSamples = projects.every(({ sample }) => sample);
+  const projectCount = projects.filter(({ sample }) => !sample).length;
+  const sampleCount = projects.length - projectCount;
 
   return (
     <div className="site-frame" id="inicio">
@@ -23,9 +24,12 @@ export default function PortfolioPage() {
             <h2 id="project-section-title">Proyectos</h2>
             {projects.length > 0 && (
               <span>
-                {allSamples
+                {projectCount === 0
                   ? "Proyectos de muestra · Imágenes generadas"
-                  : `${projects.length} ${projects.length === 1 ? "proyecto" : "proyectos"}`}
+                  : `${projectCount} ${projectCount === 1 ? "proyecto" : "proyectos"}`}
+                {projectCount > 0 && sampleCount > 0 && (
+                  ` · ${sampleCount} ${sampleCount === 1 ? "muestra" : "muestras"}`
+                )}
               </span>
             )}
           </div>
