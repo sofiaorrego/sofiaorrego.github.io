@@ -6,14 +6,16 @@
   --color-muted: #535c50;
   --color-rule: #a9b1a2;
   --color-accent: #2d6749;
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-sans: "Segoe UI", system-ui, sans-serif;
+}
+
+@theme inline {
+  --font-display: var(--font-lato);
+  --font-sans: var(--font-lato);
 }
 
 body {
   background: var(--color-paper);
   color: var(--color-ink);
-  font-family: var(--font-sans);
 }
 
 :focus-visible {
