@@ -46,4 +46,18 @@ export const projects: PortfolioProject[] = [
       height: 819,
     },
   },
+  {
+    id: "pabellon-de-cine-de-lebu",
+    title: "Pabellón de Cine de Lebu",
+    description: [
+      "Proyecto de Taller V de Arquitectura, primer semestre de 2019. La propuesta sitúa un pabellón de cine en el borde costero de Lebu, donde se encuentran el cerro, el camino peatonal y el mar.",
+      "Los módulos triangulares de madera enmarcan distintas vistas del agua a lo largo del recorrido interior. El pabellón se proyecta hacia el horizonte, como los muelles del sector, y deja libre el paso peatonal existente.",
+    ].join("\n\n"),
+    cover: {
+      src: "/proyectos/pabellon-de-cine-de-lebu.webp",
+      alt: "Interior del pabellón con un corredor entre marcos triangulares de madera",
+      width: 2027,
+      height: 1023,
+    },
+  },
 ];
