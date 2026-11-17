@@ -16,4 +16,19 @@ export const projects: PortfolioProject[] = [
       height: 840,
     },
   },
+  {
+    id: "sendero-interpretativo-collipulli",
+    title: "Sendero interpretativo de Collipulli",
+    description: [
+      "Proyecto grupal de magíster desarrollado con Freddy Sepúlveda. En Collipulli, Región de La Araucanía, la propuesta enlaza la estación ferroviaria, la iglesia de San Leonardo, el Molino El Globo y el viaducto del Malleco mediante un recorrido patrimonial.",
+      "La intervención propone recuperar la estación como centro cultural. Un atrio prolonga el paseo patrimonial y un nivel soterrado incorpora espacios de exposición. El programa contempla una muestra dedicada a Mario Grandón.",
+      "El sendero incorpora una ciclovía, miradores y espacios de pausa. En el viaducto, una pasarela con exposiciones a ambos lados permite recorrer el interior de la estructura.",
+    ].join("\n\n"),
+    cover: {
+      src: "/proyectos/sendero-interpretativo-collipulli.webp",
+      alt: "Vista del centro cultural en la Estación Collipulli, con un atrio cubierto y una escalera amarilla",
+      width: 1920,
+      height: 1080,
+    },
+  },
 ];
