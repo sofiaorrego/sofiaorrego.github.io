@@ -7,6 +7,10 @@
 3. En trabajo de frontend, invoca `$impeccable` antes de editar. Abre los cambios en un navegador y revisa móvil, tablet y escritorio, teclado, interacciones y consola. Si una herramienta falla, registra lo pendiente al entregar.
 4. Revisa el diff y las pruebas. Haz commits pequeños por tema con mensajes claros. Comprueba el destino de `origin` antes de `git push` o `git push -u origin <rama>`. Si la rama diverge, revisa su historia. Evita forzar un push. Conserva cada cambio en el repositorio al que pertenece.
 
+## Redacción
+
+En toda tarea de redacción, carga la skill de [Marketing Skills](https://github.com/coreyhaines31/marketingskills) que mejor corresponda. Usa `$copywriting` para redactar y `$copy-editing` para revisar. Para un correo o un formato especializado, usa la skill específica si corresponde. Adapta sus técnicas al lector y al formato. Conserva la voz de Sofía y respalda las afirmaciones con hechos.
+
 ## Este repo
 
 - Usa Next.js App Router, Tailwind CSS y Base UI. Mantén `output: "export"` y rutas desde la raíz de GitHub Pages.
