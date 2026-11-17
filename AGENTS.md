@@ -9,6 +9,8 @@
 
 ## Redacción
 
+No uses rayas largas (`U+2014`, *em dash*) en las respuestas ni en los archivos que redactes o edites en este repositorio.
+
 En toda tarea de redacción, carga la skill de [Marketing Skills](https://github.com/coreyhaines31/marketingskills) que mejor corresponda. Usa `$copywriting` para redactar y `$copy-editing` para revisar. Para un correo o un formato especializado, usa la skill específica si corresponde. Adapta sus técnicas al lector y al formato. Conserva la voz de Sofía y respalda las afirmaciones con hechos.
 
 ## Este repo
