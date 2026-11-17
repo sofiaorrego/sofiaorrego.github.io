@@ -13,7 +13,7 @@ Modo Experience. Los visitantes identifican a Sofía y exploran sus proyectos de
 
 THESIS: El portafolio abre como una lámina de arquitectura. La selección se lee por la escala y el encuadre de las imágenes en un collage asimétrico.
 
-OWN-WORLD: Naranja claro, tinta negra y controles verde esmeralda con texto gris oscuro. Bordes cuadrados, líneas de registro, IBM Plex Sans Light para el nombre y una cuadrícula marcada por el contraste entre las piezas.
+OWN-WORLD: Fondo blanco, tinta negra y controles verde oliva con texto blanco. Bordes cuadrados, líneas de registro, IBM Plex Sans Light para el nombre y una cuadrícula marcada por el contraste entre las piezas.
 
 STORY: El nombre identifica el portafolio y la primera selección aparece debajo. Cada proyecto abre su ficha sobre el collage y vuelve al mismo lugar al cerrarse.
 

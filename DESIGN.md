@@ -1,11 +1,11 @@
 ---
 name: Portafolio de Sofía Orrego
-description: Collage editorial con fondo naranja claro y controles verde esmeralda.
+description: Collage editorial con fondo blanco y controles verde oliva.
 colors:
-  accent: "oklch(84.5% 0.143 164.978)"
-  accent-hover: "oklch(76.5% 0.177 163.223)"
-  on-accent: "oklch(27.8% 0.033 256.848)"
-  paper: "oklch(95.4% 0.038 75.164)"
+  accent: "#46523B"
+  accent-hover: "#39432F"
+  on-accent: "#FFFFFF"
+  paper: "#FFFFFF"
   ink: "#161711"
   muted: "#515247"
   rule: "#22231b"
@@ -103,7 +103,7 @@ components:
 
 **Creative North Star: "Lámina de arquitectura"**
 
-El portafolio toma su ritmo de una lámina de arquitectura. El nombre en IBM Plex Sans, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El naranja claro enmarca las imágenes y el verde esmeralda señala dónde actuar.
+El portafolio toma su ritmo de una lámina de arquitectura. El nombre en IBM Plex Sans, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El blanco enmarca las imágenes y el verde oliva señala dónde actuar.
 
 La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.
 
@@ -111,23 +111,23 @@ La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un
 
 - Recortes de distinta escala con bordes cuadrados.
 - Tipografía ligera y líneas finas de tinta.
-- Controles verde esmeralda con texto e iconos gris oscuro.
+- Controles verde oliva con texto e iconos blancos.
 
 ## Colors
 
 ### Primary
 
-- **Verde esmeralda.** `emerald-300` destaca los saltos de sección, las flechas de las piezas, el botón de cierre y la selección de texto. `gray-800` da contraste al texto y los iconos.
+- **Verde oliva.** `#46523B` destaca los saltos de sección, las flechas de las piezas, el botón de cierre y la selección de texto. El texto y los iconos sobre oliva son blancos.
 
 ### Neutral
 
-- **Naranja claro.** `orange-100` sostiene la página, las cartelas y la ficha.
+- **Blanco.** `#FFFFFF` sostiene la página, las cartelas y la ficha.
 - **Tinta.** Da contraste al texto y al foco de teclado. Se vuelve translúcida detrás de la ficha.
 - **Tinta atenuada.** Identifica el conteo y la nota de muestra junto al encabezado de proyectos.
 - **Línea de registro.** Define los marcos, las divisiones y los bordes de los controles.
 - **Hormigón.** Da fondo a los recortes, las piezas sin portada y el estado vacío.
 
-**Regla del verde esmeralda.** Reserva el verde para acciones, cartelas activadas por el puntero o el teclado y selección de texto.
+**Regla del oliva.** Reserva el verde para acciones, cartelas activadas por el puntero o el teclado y selección de texto.
 
 ## Typography
 
@@ -164,15 +164,15 @@ Paneles, recortes y controles tienen esquinas rectas. Los contornos y las divisi
 
 ### Navegación y enlaces
 
-Los saltos de página usan fondo verde esmeralda, texto gris oscuro y una flecha direccional. El enlace de ficha lleva flecha diagonal y marco completo. El puntero cambia el fondo a `emerald-400`. El foco de teclado lleva contorno de tinta de `3px` separado por `3px`.
+Los saltos de página usan fondo verde oliva, texto blanco y una flecha direccional. El enlace de ficha lleva flecha diagonal y marco completo. El puntero oscurece el fondo a `#39432F`. El foco de teclado lleva contorno de tinta de `3px` separado por `3px`.
 
 ### Pieza del collage
 
-La imagen y la cartela forman una sola superficie interactiva. El título se alinea a la izquierda y la flecha gris oscura ocupa un bloque verde a la derecha. El puntero o el foco aplican esa combinación al resto de la cartela. La variante sin portada usa una superficie de hormigón y una cartela naranja clara en reposo.
+La imagen y la cartela forman una sola superficie interactiva. El título se alinea a la izquierda y la flecha blanca ocupa un bloque oliva a la derecha. El puntero o el foco aplican esa combinación al resto de la cartela. La variante sin portada usa una superficie de hormigón y una cartela blanca en reposo.
 
 ### Ficha y cierre
 
-La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado verde con cruz y foco interior gris oscuro. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada». La ficha incorpora la imagen y el enlace cuando están disponibles.
+La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado oliva con cruz y foco interior blancos. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada». La ficha incorpora la imagen y el enlace cuando están disponibles.
 
 ### Estado vacío
 
