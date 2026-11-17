@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #eeece2;
   --color-ink: #161711;
   --color-muted: #515247;
   --color-rule: #22231b;
-  --color-accent: #e4f04d;
   --color-concrete: #d5d4c7;
 }
 
 @theme inline {
+  --color-paper: var(--color-orange-100);
+  --color-accent: var(--color-lime-900);
+  --color-on-accent: var(--color-white);
   --font-display: var(--font-lato);
   --font-sans: var(--font-lato);
 }
@@ -26,7 +27,7 @@ body {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-on-accent);
 }
 
 .site-frame {
@@ -72,6 +73,7 @@ body {
   padding-inline: 1rem;
   border-inline: 1px solid var(--color-rule);
   background: var(--color-accent);
+  color: var(--color-on-accent);
   font-weight: 700;
 }
 
@@ -79,7 +81,6 @@ body {
 .project-link:hover,
 .project-close:hover {
   background: var(--color-ink);
-  color: var(--color-paper);
 }
 
 .arrow-mark {
@@ -192,10 +193,12 @@ body {
   place-items: center;
   border-left: 1px solid var(--color-rule);
   background: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
 .project-trigger:is(:hover, :focus-visible) .project-caption {
   background: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
 .project-trigger-text {
@@ -248,15 +251,13 @@ body {
   place-items: center;
   border-left: 1px solid var(--color-rule);
   background: var(--color-accent);
+  color: var(--color-on-accent);
   cursor: pointer;
 }
 
 .project-close:focus-visible {
+  outline-color: var(--color-on-accent);
   outline-offset: -5px;
-}
-
-.project-close:hover:focus-visible {
-  outline-color: var(--color-paper);
 }
 
 .close-mark {

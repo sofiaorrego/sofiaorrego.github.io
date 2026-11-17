@@ -1,9 +1,10 @@
 ---
 name: Portafolio de Sofía Orrego
-description: Collage editorial con papel mineral, tinta y señales lima.
+description: Collage editorial con fondo naranja claro y controles verde lima oscuro.
 colors:
-  accent: "#e4f04d"
-  paper: "#eeece2"
+  accent: "oklch(40.5% 0.101 131.063)"
+  on-accent: "#fff"
+  paper: "oklch(95.4% 0.038 75.164)"
   ink: "#161711"
   muted: "#515247"
   rule: "#22231b"
@@ -50,15 +51,15 @@ spacing:
 components:
   section-link:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.ink}"
+    textColor: "{colors.on-accent}"
     rounded: "{rounded.square}"
   project-link:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.ink}"
+    textColor: "{colors.on-accent}"
     rounded: "{rounded.square}"
   project-close:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.ink}"
+    textColor: "{colors.on-accent}"
     rounded: "{rounded.square}"
     size: "3.25rem"
   project-tile:
@@ -88,7 +89,7 @@ components:
 
 **Creative North Star: "Lámina de arquitectura"**
 
-El portafolio toma su ritmo de una lámina de arquitectura. El nombre en Lato, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El papel mineral enmarca las imágenes y la lima señala dónde actuar.
+El portafolio toma su ritmo de una lámina de arquitectura. El nombre en Lato, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El naranja claro enmarca las imágenes y el verde lima oscuro señala dónde actuar.
 
 La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.
 
@@ -96,17 +97,17 @@ La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un
 
 - Recortes de distinta escala con bordes cuadrados.
 - Jerarquía en Lato y líneas finas de tinta.
-- Lima concentrada en los controles y sus estados.
+- Controles verde lima oscuro con texto e iconos blancos.
 
 ## Colors
 
 ### Primary
 
-- **Lima de señalización.** Destaca los saltos de sección, las flechas de las piezas, el botón de cierre y la selección de texto.
+- **Verde lima oscuro.** `lime-900` destaca los saltos de sección, las flechas de las piezas, el botón de cierre y la selección de texto. El blanco da contraste al texto y los iconos sobre este fondo.
 
 ### Neutral
 
-- **Papel mineral.** Sostiene la página, las cartelas y la ficha.
+- **Naranja claro.** `orange-100` sostiene la página, las cartelas y la ficha.
 - **Tinta.** Da contraste al texto y al foco de teclado. Se vuelve translúcida detrás de la ficha.
 - **Tinta atenuada.** Identifica el conteo y la nota de muestra junto al encabezado de proyectos.
 - **Línea de registro.** Define los marcos, las divisiones y los bordes de los controles.
@@ -149,15 +150,15 @@ Paneles, recortes y controles tienen esquinas rectas. Los contornos y las divisi
 
 ### Navegación y enlaces
 
-Los saltos de página son bloques de lima con texto y una flecha direccional. El enlace de ficha lleva flecha diagonal y marco completo. Con el puntero encima, invierten a fondo tinta y texto papel. El foco de teclado lleva contorno de tinta de `3px` separado por `3px`.
+Los saltos de página usan fondo verde lima oscuro, texto blanco y una flecha direccional. El enlace de ficha lleva flecha diagonal y marco completo. El puntero cambia el fondo a tinta. El foco de teclado lleva contorno de tinta de `3px` separado por `3px`.
 
 ### Pieza del collage
 
-La imagen y la cartela forman una sola superficie interactiva. El título se alinea a la izquierda y la flecha ocupa un bloque de lima a la derecha. El puntero o el foco extienden la lima a la cartela de una pieza con imagen. La variante sin portada usa una superficie de hormigón y conserva la cartela de papel.
+La imagen y la cartela forman una sola superficie interactiva. El título se alinea a la izquierda y la flecha blanca ocupa un bloque verde a la derecha. El puntero o el foco extienden el verde y el blanco al resto de la cartela. La variante sin portada usa una superficie de hormigón y una cartela naranja clara en reposo.
 
 ### Ficha y cierre
 
-La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado de lima con foco interior. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada». La ficha incorpora la imagen y el enlace cuando están disponibles.
+La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado verde con cruz y foco interior blancos. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada». La ficha incorpora la imagen y el enlace cuando están disponibles.
 
 ### Estado vacío
 

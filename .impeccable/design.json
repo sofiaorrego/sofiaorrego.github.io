@@ -1,36 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T21:27:20.436Z",
+  "generatedAt": "2026-11-17T21:33:44.117Z",
   "title": "Sistema de diseño del portafolio de Sofía Orrego",
   "extensions": {
     "colorMeta": {
       "accent": {
         "role": "primary",
-        "displayName": "Lima de señalización",
-        "tonalRamp": [
-          "oklch(15% 0.029 113.5)",
-          "oklch(27% 0.063 113.5)",
-          "oklch(39% 0.099 113.5)",
-          "oklch(51% 0.129 113.5)",
-          "oklch(63% 0.149 113.5)",
-          "oklch(75% 0.161 113.5)",
-          "oklch(87% 0.129 113.5)",
-          "oklch(95% 0.063 113.5)"
-        ]
+        "displayName": "Verde lima oscuro"
       },
       "paper": {
         "role": "neutral",
-        "displayName": "Papel mineral",
-        "tonalRamp": [
-          "oklch(15% 0.002 97.4)",
-          "oklch(27% 0.005 97.4)",
-          "oklch(39% 0.007 97.4)",
-          "oklch(51% 0.010 97.4)",
-          "oklch(63% 0.011 97.4)",
-          "oklch(75% 0.012 97.4)",
-          "oklch(87% 0.010 97.4)",
-          "oklch(95% 0.005 97.4)"
-        ]
+        "displayName": "Naranja claro"
       },
       "ink": {
         "role": "neutral",
@@ -87,6 +67,10 @@
           "oklch(87% 0.013 103.2)",
           "oklch(95% 0.006 103.2)"
         ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "Blanco sobre verde lima"
       }
     },
     "typographyMeta": {
@@ -155,7 +139,7 @@
       "refersTo": "section-link",
       "description": "Navegación interna con flecha direccional y líneas laterales.",
       "html": "<a class=\"ds-action-link\" href=\"#proyectos\">Proyectos <svg class=\"ds-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M8 2v11m-5-5 5 5 5-5\"/></svg></a>",
-      "css": ".ds-action-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 3rem; padding-inline: 1rem; border-inline: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, #e4f04d); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); font-weight: 700; text-decoration: none; } .ds-action-link:hover { background: var(--color-ink, #161711); color: var(--color-paper, #eeece2); } .ds-action-link:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-arrow { flex: 0 0 auto; }"
+      "css": ".ds-action-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 3rem; padding-inline: 1rem; border-inline: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); font-family: var(--font-lato, Lato, sans-serif); font-weight: 700; text-decoration: none; } .ds-action-link:hover { background: var(--color-ink, #161711); } .ds-action-link:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-arrow { flex: 0 0 auto; }"
     },
     {
       "name": "Enlace de ficha",
@@ -163,15 +147,15 @@
       "refersTo": "project-link",
       "description": "Acción con flecha diagonal y marco completo.",
       "html": "<a class=\"ds-action-link\" href=\"#proyecto\">Ver proyecto <svg class=\"ds-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12 12 4M4 4h8v8\"/></svg></a>",
-      "css": ".ds-action-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 3rem; padding-inline: 1rem; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, #e4f04d); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); font-weight: 700; text-decoration: none; } .ds-action-link:hover { background: var(--color-ink, #161711); color: var(--color-paper, #eeece2); } .ds-action-link:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-arrow { flex: 0 0 auto; }"
+      "css": ".ds-action-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 3rem; padding-inline: 1rem; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); font-family: var(--font-lato, Lato, sans-serif); font-weight: 700; text-decoration: none; } .ds-action-link:hover { background: var(--color-ink, #161711); } .ds-action-link:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-arrow { flex: 0 0 auto; }"
     },
     {
       "name": "Cierre de ficha",
       "kind": "button",
       "refersTo": "project-close",
-      "description": "Control cuadrado con cruz y foco interior.",
+      "description": "Control cuadrado con cruz y foco interior blancos.",
       "html": "<button type=\"button\" class=\"ds-close\" aria-label=\"Cerrar ficha\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"m2.5 2.5 11 11m0-11-11 11\"/></svg></button>",
-      "css": ".ds-close { display: grid; width: 3.25rem; height: 3.25rem; padding: 0; place-items: center; border: 0; border-left: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, #e4f04d); color: var(--color-ink, #161711); cursor: pointer; } .ds-close:hover { background: var(--color-ink, #161711); color: var(--color-paper, #eeece2); } .ds-close:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: -5px; } .ds-close:hover:focus-visible { outline-color: var(--color-paper, #eeece2); }"
+      "css": ".ds-close { display: grid; width: 3.25rem; height: 3.25rem; padding: 0; place-items: center; border: 0; border-left: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); cursor: pointer; } .ds-close:hover { background: var(--color-ink, #161711); } .ds-close:focus-visible { outline: 3px solid var(--color-on-accent, #fff); outline-offset: -5px; }"
     },
     {
       "name": "Pieza con portada",
@@ -179,23 +163,23 @@
       "refersTo": "project-tile",
       "description": "Recorte interactivo con cartela. El plano de hormigón muestra el fondo de la imagen.",
       "html": "<button type=\"button\" class=\"ds-tile\"><span class=\"ds-media\" aria-hidden=\"true\"></span><span class=\"ds-caption\"><span class=\"ds-title\">Proyecto de muestra</span><span class=\"ds-arrow-box\"><svg class=\"ds-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12 12 4M4 4h8v8\"/></svg></span></span></button>",
-      "css": ".ds-tile { display: flex; flex-direction: column; width: 100%; padding: 0; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-paper, #eeece2); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); cursor: pointer; text-align: left; } .ds-tile:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-media { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-concrete, #d5d4c7); } .ds-media img { display: block; width: 100%; height: 100%; object-fit: cover; } .ds-caption { display: flex; width: 100%; align-items: stretch; justify-content: space-between; min-height: 2.85rem; border-top: 1px solid var(--color-rule, #22231b); } .ds-title { align-self: center; padding: 0.63rem 0.7rem 0.72rem; font-size: clamp(1rem, 1.6vw, 1.4rem); font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; } .ds-arrow-box { display: grid; flex: 0 0 2.9rem; place-items: center; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-accent, #e4f04d); } .ds-tile:is(:hover, :focus-visible) .ds-caption { background: var(--color-accent, #e4f04d); } @media (hover: hover) and (prefers-reduced-motion: no-preference) { .ds-media img { transition: transform 360ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-tile:hover .ds-media img { transform: scale(1.035); } }"
+      "css": ".ds-tile { display: flex; flex-direction: column; width: 100%; padding: 0; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-paper, oklch(95.4% 0.038 75.164)); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); cursor: pointer; text-align: left; } .ds-tile:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-media { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-concrete, #d5d4c7); } .ds-media img { display: block; width: 100%; height: 100%; object-fit: cover; } .ds-caption { display: flex; width: 100%; align-items: stretch; justify-content: space-between; min-height: 2.85rem; border-top: 1px solid var(--color-rule, #22231b); } .ds-title { align-self: center; padding: 0.63rem 0.7rem 0.72rem; font-size: clamp(1rem, 1.6vw, 1.4rem); font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; } .ds-arrow-box { display: grid; flex: 0 0 2.9rem; place-items: center; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); } .ds-tile:is(:hover, :focus-visible) .ds-caption { background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); } @media (hover: hover) and (prefers-reduced-motion: no-preference) { .ds-media img { transition: transform 360ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-tile:hover .ds-media img { transform: scale(1.035); } }"
     },
     {
       "name": "Pieza sin portada",
       "kind": "card",
       "refersTo": "text-tile",
-      "description": "Plano de hormigón con cartela de papel y acción lima.",
+      "description": "Plano de hormigón con cartela naranja clara y acción verde con flecha blanca.",
       "html": "<button type=\"button\" class=\"ds-tile ds-tile-text\"><span class=\"ds-caption\"><span class=\"ds-title\">Proyecto de muestra</span><span class=\"ds-arrow-box\"><svg class=\"ds-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12 12 4M4 4h8v8\"/></svg></span></span></button>",
-      "css": ".ds-tile { display: flex; flex-direction: column; width: 100%; padding: 0; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-paper, #eeece2); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); cursor: pointer; text-align: left; } .ds-tile:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-media { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-concrete, #d5d4c7); } .ds-media img { display: block; width: 100%; height: 100%; object-fit: cover; } .ds-caption { display: flex; width: 100%; align-items: stretch; justify-content: space-between; min-height: 2.85rem; border-top: 1px solid var(--color-rule, #22231b); } .ds-title { align-self: center; padding: 0.63rem 0.7rem 0.72rem; font-size: clamp(1rem, 1.6vw, 1.4rem); font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; } .ds-arrow-box { display: grid; flex: 0 0 2.9rem; place-items: center; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-accent, #e4f04d); } .ds-tile:is(:hover, :focus-visible) .ds-caption { background: var(--color-accent, #e4f04d); } .ds-tile-text { justify-content: end; min-height: 11rem; background: var(--color-concrete, #d5d4c7); } .ds-tile-text:is(:hover, :focus-visible) .ds-caption, .ds-tile-text .ds-caption { background: var(--color-paper, #eeece2); }"
+      "css": ".ds-tile { display: flex; flex-direction: column; width: 100%; padding: 0; border: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-paper, oklch(95.4% 0.038 75.164)); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); cursor: pointer; text-align: left; } .ds-tile:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: 3px; } .ds-media { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-concrete, #d5d4c7); } .ds-media img { display: block; width: 100%; height: 100%; object-fit: cover; } .ds-caption { display: flex; width: 100%; align-items: stretch; justify-content: space-between; min-height: 2.85rem; border-top: 1px solid var(--color-rule, #22231b); } .ds-title { align-self: center; padding: 0.63rem 0.7rem 0.72rem; font-size: clamp(1rem, 1.6vw, 1.4rem); font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; } .ds-arrow-box { display: grid; flex: 0 0 2.9rem; place-items: center; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); } .ds-tile:is(:hover, :focus-visible) .ds-caption { background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); } .ds-tile-text { justify-content: end; min-height: 11rem; background: var(--color-concrete, #d5d4c7); } .ds-tile-text .ds-caption { background: var(--color-paper, oklch(95.4% 0.038 75.164)); }"
     },
     {
       "name": "Ficha lateral",
       "kind": "custom",
       "refersTo": "project-sheet",
-      "description": "Panel de papel con barra fija, título y aviso de muestra.",
+      "description": "Panel naranja claro con barra fija, título y aviso de muestra.",
       "html": "<section class=\"ds-sheet\" aria-label=\"Ficha de proyecto\"><div class=\"ds-sheet-bar\"><span>Proyecto de muestra · Imagen generada</span><button type=\"button\" class=\"ds-close\" aria-label=\"Cerrar ficha\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"m2.5 2.5 11 11m0-11-11 11\"/></svg></button></div><div class=\"ds-sheet-body\"><h2 class=\"ds-sheet-title\">Proyecto de muestra</h2></div></section>",
-      "css": ".ds-sheet { width: min(100%, 51rem); overflow-y: auto; overscroll-behavior-y: contain; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-paper, #eeece2); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); } .ds-sheet-bar { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding-left: clamp(1rem, 3.25vw, 2.25rem); border-bottom: 1px solid var(--color-rule, #22231b); background: var(--color-paper, #eeece2); font-weight: 700; } .ds-sheet-body { padding: clamp(1rem, 3.25vw, 2.25rem); } .ds-sheet-title { max-width: 18ch; margin: 0 0 1.1rem; font-size: clamp(2rem, 5.5vw, 4.9rem); font-weight: 700; line-height: 0.98; letter-spacing: -0.04em; overflow-wrap: anywhere; } .ds-close { display: grid; width: 3.25rem; height: 3.25rem; padding: 0; place-items: center; border: 0; border-left: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, #e4f04d); color: var(--color-ink, #161711); cursor: pointer; } .ds-close:hover { background: var(--color-ink, #161711); color: var(--color-paper, #eeece2); } .ds-close:focus-visible { outline: 3px solid var(--color-ink, #161711); outline-offset: -5px; } .ds-close:hover:focus-visible { outline-color: var(--color-paper, #eeece2); }"
+      "css": ".ds-sheet { width: min(100%, 51rem); overflow-y: auto; overscroll-behavior-y: contain; border-left: 1px solid var(--color-rule, #22231b); background: var(--color-paper, oklch(95.4% 0.038 75.164)); color: var(--color-ink, #161711); font-family: var(--font-lato, Lato, sans-serif); } .ds-sheet-bar { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding-left: clamp(1rem, 3.25vw, 2.25rem); border-bottom: 1px solid var(--color-rule, #22231b); background: var(--color-paper, oklch(95.4% 0.038 75.164)); font-weight: 700; } .ds-sheet-body { padding: clamp(1rem, 3.25vw, 2.25rem); } .ds-sheet-title { max-width: 18ch; margin: 0 0 1.1rem; font-size: clamp(2rem, 5.5vw, 4.9rem); font-weight: 700; line-height: 0.98; letter-spacing: -0.04em; overflow-wrap: anywhere; } .ds-close { display: grid; width: 3.25rem; height: 3.25rem; padding: 0; place-items: center; border: 0; border-left: 1px solid var(--color-rule, #22231b); border-radius: 0; background: var(--color-accent, oklch(40.5% 0.101 131.063)); color: var(--color-on-accent, #fff); cursor: pointer; } .ds-close:hover { background: var(--color-ink, #161711); } .ds-close:focus-visible { outline: 3px solid var(--color-on-accent, #fff); outline-offset: -5px; }"
     },
     {
       "name": "Estado vacío",
@@ -208,11 +192,11 @@
   ],
   "narrative": {
     "northStar": "Lámina de arquitectura",
-    "overview": "El portafolio toma su ritmo de una lámina de arquitectura. El nombre en Lato, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El papel mineral enmarca las imágenes y la lima señala dónde actuar.\n\nLa ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.",
+    "overview": "El portafolio toma su ritmo de una lámina de arquitectura. El nombre en Lato, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El naranja claro enmarca las imágenes y el verde lima oscuro señala dónde actuar.\n\nLa ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.",
     "keyCharacteristics": [
       "Recortes de distinta escala con bordes cuadrados.",
       "Jerarquía en Lato y líneas finas de tinta.",
-      "Lima concentrada en los controles y sus estados."
+      "Controles verde lima oscuro con texto e iconos blancos."
     ],
     "rules": [
       {
