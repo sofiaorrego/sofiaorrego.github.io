@@ -31,4 +31,19 @@ export const projects: PortfolioProject[] = [
       height: 1080,
     },
   },
+  {
+    id: "archivo-tomi-ungerer",
+    title: "Archivo Tomi Ungerer en Estrasburgo",
+    description: [
+      "Proyecto grupal de Taller VIII de Arquitectura desarrollado por Javiera Díaz, Sofía Orrego e Isabela Troncoso. La propuesta sitúa un archivo dedicado al ilustrador Tomi Ungerer en la Gran Isla, en el centro histórico de Estrasburgo.",
+      "El proyecto distribuye los depósitos en tres torres que toman como referencia la altura y el ancho de las fachadas vecinas. Una abertura entre los volúmenes prolonga el recorrido desde la plaza arbolada hasta una terraza sobre el río.",
+      "El programa incluye salas de exposición, lectura y consulta, además de una librería y una cafetería. El nivel subterráneo incorpora un espacio de digitalización para las obras del archivo.",
+    ].join("\n\n"),
+    cover: {
+      src: "/proyectos/archivo-tomi-ungerer.webp",
+      alt: "Vista desde el río de tres torres de ladrillo entre los edificios del centro histórico de Estrasburgo",
+      width: 1477,
+      height: 819,
+    },
+  },
 ];
