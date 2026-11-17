@@ -2,21 +2,15 @@ export default function ConstructionNotice() {
   return (
     <section
       aria-labelledby="construction-title"
-      className="grid items-center gap-7 pt-10 pb-4 sm:gap-9 sm:py-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-12"
+      className="construction-notice"
     >
-      <h2
-        id="construction-title"
-        className="font-display text-[clamp(2.65rem,6vw,5rem)] leading-[1.03] tracking-[-0.04em]"
-      >
-        Portafolio{" "}
-        <span className="block italic text-accent">en construcción</span>
-      </h2>
+      <h3 id="construction-title">Portafolio en construcción</h3>
 
       <svg
         aria-hidden="true"
         focusable="false"
         viewBox="0 0 420 344"
-        className="h-auto w-full max-w-[30rem] justify-self-center text-accent lg:justify-self-end"
+        className="construction-drawing"
         fill="none"
       >
         <g stroke="currentColor" strokeWidth="1" opacity="0.36">
@@ -31,8 +25,8 @@ export default function ConstructionNotice() {
 
         <g stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round">
           <path d="M89 211 226 273 339 210 202 148Z" />
-          <path d="M89 158 226 220 339 157 202 95Z" className="fill-paper" />
-          <path d="M89 105 226 167 339 104 202 42Z" className="fill-paper" />
+          <path d="M89 158 226 220 339 157 202 95Z" fill="var(--color-concrete)" />
+          <path d="M89 105 226 167 339 104 202 42Z" fill="var(--color-concrete)" />
           <path d="M89 105v106m137-44v106m113-169v106" />
           <path d="M89 111 226 173 339 110m-113 57v6" opacity="0.55" />
         </g>

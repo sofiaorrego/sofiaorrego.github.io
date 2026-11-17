@@ -1,3 +1,3 @@
-import type { PortfolioProject } from "@/components/ProjectAccordion";
+import type { PortfolioProject } from "./project";
 
 export const projects: PortfolioProject[] = [];

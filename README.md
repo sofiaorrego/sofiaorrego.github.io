@@ -17,17 +17,23 @@ Abre la dirección que muestra la terminal, normalmente `http://localhost:3000`.
 
 ## Agregar un proyecto
 
-Edita [content/projects.ts](content/projects.ts). Para cada proyecto, escribe un título, un identificador único y una descripción breve con su contexto, tu aporte y el resultado. El campo `url` es opcional y se usa cuando el trabajo ya tiene un enlace público.
+Edita [content/projects.ts](content/projects.ts). Para cada proyecto, escribe un título, un identificador único y una descripción breve con su contexto, tu aporte y el resultado. `url` enlaza al trabajo cuando ya está disponible en línea. `cover` define la imagen que abre la ficha desde el collage. Ambos campos son opcionales.
 
 ```ts
 {
   id: "nombre-del-proyecto",
   title: "Nombre del proyecto",
   description: "Cuenta qué necesitaba el proyecto, qué hiciste y qué resultado se puede comprobar.",
+  cover: {
+    src: "/proyectos/nombre-del-proyecto.webp",
+    alt: "Describe qué se ve en la imagen.",
+    width: 1536,
+    height: 1024,
+  },
 }
 ```
 
-Añade la ficha dentro de `projects`. La lista de proyectos aparece al guardar la primera ficha y reemplaza el aviso de construcción. Usa contenido que quieras compartir públicamente.
+Añade la ficha dentro de `projects` y guarda la imagen aprobada en `public/proyectos/`. Indica sus dimensiones reales en píxeles. La primera ficha activa el collage y el orden del archivo determina el orden de lectura. Usa contenido que quieras compartir públicamente.
 
 Si prefieres editar con Codex, abre una sesión en este repositorio desde Orca o ejecuta `codex` en PowerShell. Un buen primer pedido es **Agrega al portafolio este proyecto con el texto que te paso. Muéstrame cómo queda en el navegador antes de publicarlo**.
 
@@ -35,7 +41,7 @@ Si prefieres editar con Codex, abre una sesión en este repositorio desde Orca o
 
 | Ruta | Qué contiene |
 | --- | --- |
-| [app/page.tsx](app/page.tsx) | Portada y selección entre la vista de construcción y la lista de proyectos |
+| [app/page.tsx](app/page.tsx) | Portada y selección entre la vista de construcción y el collage |
 | [app/globals.css](app/globals.css) | Colores, tipografía y estilos compartidos |
 | [components/](components/) | Componentes TSX, pruebas e índices con exportación por defecto |
 | [components/llms.txt](components/llms.txt) | Índice de Base UI para consultar antes de cambiar un componente |
