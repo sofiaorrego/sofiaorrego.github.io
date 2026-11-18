@@ -10,9 +10,9 @@ export const projects: PortfolioProject[] = [
       builtArea: 3250,
     },
     description: [
-      "Proyecto de fin de carrera de Arquitectura UBB, 2022. En Atacalco, El Carmen, la propuesta destina 3.250 m² a un lodge de bienestar para personas mayores.",
-      "Un recorrido curvo conduce desde el acceso hacia el río. Los quiebres del volumen siguen la pendiente, buscan conservar la vegetación existente y crean pausas con vistas al paisaje. Una ruta accesible conecta las habitaciones con las áreas comunes.",
-      "El programa reúne 20 habitaciones, piscinas, terrazas y espacios de descanso. Sobre fundaciones de hormigón armado, la estructura combina paneles de madera contralaminada (CLT) con vigas y pilares de pino radiata laminado.",
+      "Lodge Senior es una propuesta de alojamiento de bienestar para personas mayores, ubicada en Atacalco, en el entorno del río Diguillín. Desarrollado como proyecto de título de Arquitectura en la Universidad del Bío-Bío, plantea una experiencia de descanso y reconexión con la naturaleza a través del diseño biofílico, donde el paisaje se convierte en el principal articulador de la arquitectura.",
+      "El proyecto se configura como un recorrido que nace junto a una pequeña laguna y culmina frente al río Diguillín. Su geometría curva se adapta a la topografía y genera una secuencia de perspectivas cambiantes, donde los quiebres del volumen enmarcan el paisaje y crean espacios de pausa y contemplación. Esta experiencia se complementa con una organización programática que transita gradualmente desde los espacios públicos y de encuentro, próximos al acceso, hacia las habitaciones y áreas de bienestar situadas en el sector más tranquilo del terreno.",
+      "La propuesta toma como referencia tres elementos del entorno: el agua, el bosque y la montaña. La fluidez del agua se interpreta en la continuidad del recorrido y el dinamismo de sus curvas; el bosque, en la calidez y protección de una estructura de madera; y la montaña, en las bases de hormigón que anclan el edificio al terreno y en una cubierta vegetal que prolonga visualmente la pendiente natural. Así, arquitectura y paisaje establecen una relación que busca favorecer el descanso, la contemplación y el bienestar físico y emocional de sus visitantes.",
     ].join("\n\n"),
     cover: {
       src: "/proyectos/lodge-senior/01-fachada-pradera.webp",
