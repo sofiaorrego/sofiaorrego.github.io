@@ -61,7 +61,7 @@ async function renderOpenGraph() {
   const regular = typeface.getVariation({ wght: 400 });
 
   const frames = [
-    { source: "lodge-senior", left: 466, top: 40, width: 694, height: 346 },
+    { source: "lodge-senior/01-fachada-pradera", left: 466, top: 40, width: 694, height: 346 },
     { source: "archivo-tomi-ungerer", left: 466, top: 398, width: 341, height: 192 },
     { source: "pabellon-de-cine-de-lebu", left: 819, top: 398, width: 341, height: 192 },
   ];
