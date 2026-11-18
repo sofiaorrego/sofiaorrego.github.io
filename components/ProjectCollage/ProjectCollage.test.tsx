@@ -51,6 +51,35 @@ it("muestra proyectos sin portada ni enlace", async () => {
   expect(within(dialog).queryByRole("link")).toBeNull();
 });
 
+it.each([
+  {
+    details: { year: 2022, location: "Sector rural, comuna de ejemplo, región de ejemplo, Chile", builtArea: 3250.5 },
+    year: "2022",
+    area: "3.250,5 m²",
+  },
+  {
+    details: { location: "Sector rural, comuna de ejemplo, región de ejemplo, Chile" },
+    year: "Por confirmar",
+    area: "Por confirmar",
+  },
+])("muestra los datos en orden antes de la descripción", async ({ details, year, area }) => {
+  const project = { ...projects[1], details };
+  render(<ProjectCollage projects={[project]} />);
+  fireEvent.click(screen.getByRole("button", { name: project.title }));
+
+  const dialog = await screen.findByRole("dialog", { name: project.title });
+  const facts = dialog.querySelector("dl");
+  const description = within(dialog).getByText(project.description);
+  expect(facts).not.toBeNull();
+  expect(Array.from(facts!.querySelectorAll("dt, dd"), (element) => element.textContent)).toEqual([
+    "Proyecto", project.title,
+    "Año", year,
+    "Lugar", details.location,
+    "Superficie construida", area,
+  ]);
+  expect(facts!.compareDocumentPosition(description) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+});
+
 it("abre cada galería en la portada y ofrece una línea por imagen", async () => {
   const image = { src: "/planta.jpg", alt: "Planta del edificio", width: 1600, height: 900, caption: "Planta" };
   render(<ProjectCollage projects={[{ ...featuredProject, gallery: [image] }]} />);

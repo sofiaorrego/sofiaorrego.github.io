@@ -4,6 +4,11 @@ export const projects: PortfolioProject[] = [
   {
     id: "lodge-senior",
     title: "Lodge Senior",
+    details: {
+      year: 2022,
+      location: "Atacalco, comuna de El Carmen, Región de Ñuble, Chile",
+      builtArea: 3250,
+    },
     description: [
       "Proyecto de fin de carrera de Arquitectura UBB, 2022. En Atacalco, El Carmen, la propuesta destina 3.250 m² a un lodge de bienestar para personas mayores.",
       "Un recorrido curvo conduce desde el acceso hacia el río. Los quiebres del volumen siguen la pendiente, buscan conservar la vegetación existente y crean pausas con vistas al paisaje. Una ruta accesible conecta las habitaciones con las áreas comunes.",
@@ -91,6 +96,9 @@ export const projects: PortfolioProject[] = [
   {
     id: "sendero-interpretativo-collipulli",
     title: "Sendero interpretativo de Collipulli",
+    details: {
+      location: "Collipulli, comuna de Collipulli, Región de La Araucanía, Chile",
+    },
     description: [
       "Proyecto grupal de magíster desarrollado con Freddy Sepúlveda. En Collipulli, Región de La Araucanía, la propuesta enlaza la estación ferroviaria, la iglesia de San Leonardo, el Molino El Globo y el viaducto del Malleco mediante un recorrido patrimonial.",
       "La intervención propone recuperar la estación como centro cultural. Un atrio prolonga el paseo patrimonial y un nivel soterrado incorpora espacios de exposición. El programa contempla una muestra dedicada a Mario Grandón.",
@@ -143,6 +151,10 @@ export const projects: PortfolioProject[] = [
   {
     id: "archivo-tomi-ungerer",
     title: "Archivo Tomi Ungerer en Estrasburgo",
+    details: {
+      year: 2021,
+      location: "Gran Isla, comuna de Estrasburgo, Grand Est, Francia",
+    },
     description: [
       "Proyecto grupal de Taller VIII de Arquitectura desarrollado por Javiera Díaz, Sofía Orrego e Isabela Troncoso. La propuesta sitúa un archivo dedicado al ilustrador Tomi Ungerer en la Gran Isla, en el centro histórico de Estrasburgo.",
       "El proyecto distribuye los depósitos en tres torres que toman como referencia la altura y el ancho de las fachadas vecinas. Una abertura entre los volúmenes prolonga el recorrido desde la plaza arbolada hasta una terraza sobre el río.",
@@ -195,6 +207,10 @@ export const projects: PortfolioProject[] = [
   {
     id: "pabellon-de-cine-de-lebu",
     title: "Pabellón de Cine de Lebu",
+    details: {
+      year: 2019,
+      location: "Borde costero de Lebu, comuna de Lebu, Región del Biobío, Chile",
+    },
     description: [
       "Proyecto de Taller V de Arquitectura, primer semestre de 2019. La propuesta sitúa un pabellón de cine en el borde costero de Lebu, donde se encuentran el cerro, el camino peatonal y el mar.",
       "Los módulos triangulares de madera enmarcan distintas vistas del agua a lo largo del recorrido interior. El pabellón se proyecta hacia el horizonte, como los muelles del sector, y deja libre el paso peatonal existente.",
