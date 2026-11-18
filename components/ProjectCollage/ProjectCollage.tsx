@@ -2,12 +2,13 @@
 
 import { Dialog } from "@base-ui/react/dialog";
 import Image from "next/image";
+import ProjectGallery from "@/components/ProjectGallery";
 import type { PortfolioProject } from "@/content/project";
 
 export default function ProjectCollage({ projects }: { projects: PortfolioProject[] }) {
   return (
     <ul className="project-collage">
-      {projects.map(({ id, title, description, url, cover, sample }, index) => (
+      {projects.map(({ id, title, description, url, cover, gallery, sample }, index) => (
         <li key={id} className="project-tile">
           <Dialog.Root>
             <h3 className="project-heading">
@@ -38,16 +39,7 @@ export default function ProjectCollage({ projects }: { projects: PortfolioProjec
                 </div>
                 <div className="project-sheet-body">
                   <Dialog.Title className="project-sheet-title">{title}</Dialog.Title>
-                  {cover && (
-                    <Image
-                      className="project-sheet-image"
-                      src={cover.src}
-                      alt={cover.alt}
-                      width={cover.width}
-                      height={cover.height}
-                      sizes="(min-width: 52rem) 48rem, 100vw"
-                    />
-                  )}
+                  <ProjectGallery cover={cover} gallery={gallery} />
                   <Dialog.Description className="project-description">{description}</Dialog.Description>
                   {url && <a className="project-link" href={url}>Ver proyecto <span className="arrow-mark" aria-hidden="true" /></a>}
                 </div>

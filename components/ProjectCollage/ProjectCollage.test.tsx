@@ -50,3 +50,28 @@ it("muestra proyectos sin portada ni enlace", async () => {
   expect(within(dialog).queryByRole("img")).toBeNull();
   expect(within(dialog).queryByRole("link")).toBeNull();
 });
+
+it("abre cada galería en la portada y ofrece una línea por imagen", async () => {
+  const image = { src: "/planta.jpg", alt: "Planta del edificio", width: 1600, height: 900, caption: "Planta" };
+  render(<ProjectCollage projects={[{ ...featuredProject, gallery: [image] }]} />);
+
+  const trigger = screen.getByRole("button", { name: featuredProject.title });
+  fireEvent.click(trigger);
+  const dialog = await screen.findByRole("dialog", { name: featuredProject.title });
+  const sheet = within(dialog);
+  const coverLine = sheet.getByRole("button", { name: "Imagen 1 de 2. Portada" });
+  const planLine = sheet.getByRole("button", { name: "Imagen 2 de 2. Planta" });
+  expect(coverLine.getAttribute("aria-current")).toBe("true");
+  expect(sheet.getByRole("img", { name: featuredProject.cover.alt })).toBeTruthy();
+
+  fireEvent.click(planLine);
+  expect(coverLine.hasAttribute("aria-current")).toBe(false);
+  expect(planLine.getAttribute("aria-current")).toBe("true");
+  expect(sheet.getByRole("img", { name: image.alt })).toBeTruthy();
+
+  fireEvent.click(sheet.getByRole("button", { name: "Cerrar ficha" }));
+  await waitFor(() => expect(screen.queryByRole("dialog")).toBeNull());
+  fireEvent.click(trigger);
+  const reopened = await screen.findByRole("dialog", { name: featuredProject.title });
+  expect(within(reopened).getByRole("button", { name: "Imagen 1 de 2. Portada" }).getAttribute("aria-current")).toBe("true");
+});

@@ -105,7 +105,7 @@ components:
 
 El portafolio toma su ritmo de una lámina de arquitectura. El nombre en IBM Plex Sans, las líneas de registro y el espacio entre piezas ordenan los recortes del collage. El blanco enmarca las imágenes y el verde oliva señala dónde actuar.
 
-La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. Este sistema recoge la vista previa local con imágenes de muestra. La colección de proyectos reales está vacía.
+La ficha se abre desde el borde derecho y conserva el collage a la vista bajo un velo de tinta. La vista previa reúne cuatro proyectos de Sofía y sus galerías de imágenes.
 
 **Key Characteristics:**
 
@@ -172,7 +172,9 @@ La imagen y la cartela forman una sola superficie interactiva. El título se ali
 
 ### Ficha y cierre
 
-La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado oliva con cruz y foco interior blancos. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada». La ficha incorpora la imagen y el enlace cuando están disponibles.
+La ficha lateral ocupa todo el ancho disponible hasta `51rem`. La barra superior queda fija durante el desplazamiento y lleva un cierre cuadrado oliva con cruz y foco interior blancos. Cuando corresponde, la barra muestra «Proyecto de muestra · Imagen generada».
+
+Al abrir una galería, la portada aparece primero. El marco mantiene su proporción al deslizar y muestra cada imagen completa. Una línea bajo el marco identifica cada imagen. La activa usa oliva oscuro y un trazo más grueso. Las demás usan oliva claro. Las líneas funcionan como botones y admiten navegación con las flechas del teclado. El pie identifica la vista y permite abrirla a tamaño completo.
 
 ### Estado vacío
 
